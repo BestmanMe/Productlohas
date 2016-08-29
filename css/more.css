@@ -1,0 +1,80 @@
+
+
+section{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	font-size: 14px;
+	background-size: 50% 30%;
+	position: relative;
+	z-index: -1;
+	/*padding-bottom: 60px;*/
+}
+
+section div{
+	border-radius: 10px;
+	border: 1px solid #DEDEDE;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+section ul{
+	width: 100%;
+}
+
+section ul li{
+	text-align: left;
+	padding-left: 10px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #dedede;
+}
+
+section ul li.last{
+	border: none;
+}
+
+section ul li a{
+	color: #000;
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+
+section ul li a i{
+	float: right;
+	margin-right: 20px;
+	font-family:"imocc-icon";
+	font-size: 14px;
+}
+
+.returnRegister{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #D0D77A, #B2BF3D);
+	box-shadow: 0 1px 1px #fff, 0 -1px 1px #fff;
+}
+
+footer ul li:nth-child(5){
+	border-top: 4px solid #B2BF3D;
+}
+
+footer ul li:nth-child(5) i{
+	color: #B2BF3D;
+}
+footer ul li:nth-child(5) a{
+	color: #B2BF3D;
+}

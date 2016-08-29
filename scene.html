@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.3.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="css/scene.css" />
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide0">
+					<div class="ani" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/logo.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/text.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s" />
+					</div>
+				</div>
+				<div class="swiper-slide slide1">
+					<div class="ani" swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/text2.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/text3.png" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					</div>
+				</div>
+				<div class="swiper-slide slide2">
+					<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
+						<img src="img/img1.png" class="ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<img src="img/text4.png" class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<img src="img/img2.png" class="ani" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					</div>
+					<div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<img src="img/text5.png" class="ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					</div>
+				</div>
+				<div class="swiper-slide slide3">
+					<div class="ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+						<img src="img/text6.png" class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="2s">
+						<img src="img/img3.png" class="ani" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					</div>
+					<div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<img src="img/text7.png" class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s" />
+					</div>
+				</div>
+				<div class="swiper-slide slide4">
+					<a href="index.html" class="ani">开始体验</a>
+					<div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="">
+						<img src="img/pic5_2.gif" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="">
+						<img src="img/pic5_1.gif" class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.3.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			window.onload = function() {
+				$('.swiper-container').width($(window).width());
+				$('.swiper-container').height($(window).height());
+				var mySwiper = new Swiper('.swiper-container', {
+					//					autoplay: 5000, //可选选项，自动滑动
+					loop: true,
+					onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+						swiperAnimateCache(swiper); //隐藏动画元素 
+						swiperAnimate(swiper); //初始化完成开始动画
+					},
+					onSlideChangeEnd: function(swiper) {
+						swiperAnimate(swiper)
+					}
+				})
+			}
+		</script>
+
+	</body>
+
+</html>

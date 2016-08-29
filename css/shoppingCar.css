@@ -1,0 +1,186 @@
+section{
+	background: #fff;
+}
+
+.register{
+	position: absolute;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	box-sizing: border-box;
+	border-radius: 3px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #D0D77A, #B2BF3D);
+	box-shadow: 0 1px 1px #fff, 0 -1px 1px #fff;
+}
+
+section{
+	position: relative;
+	padding-top: 44px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	background: url(../img/bg.jpg) no-repeat center 165px;
+	background-size: 50% 30%;
+	z-index: -1;
+}
+
+.infor{
+	display: none;
+	position: fixed;
+	top: 44px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #333333;
+	text-align: left;
+	color: #fff;
+	font-size: 14px;
+	z-index: 0;
+}
+
+.infor p{
+	display: inline-block;
+	margin-left: 5px;
+	float: left;
+}
+.infor span{
+	display: inline-block;
+	float: left;
+}
+
+
+section ul{
+	position: relative;
+	top: 44px;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+section ul li{
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+section ul li img{
+	margin: 20px 20px 0 20px;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+section ul li p{
+	color: #333333;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 10px 20px 0 0;
+	text-align: left;
+}
+
+section ul li span.span1{
+	display: block;
+	color: #B2BF3D;
+	font-size: 14px;
+	text-align: left;
+}
+
+
+section ul li p input.text{
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+	width: 50px;
+	height: 30px;
+	border: 1px solid #ECECEC;
+	background: #fff;
+	text-align: center;
+	line-height: 30px;
+	box-shadow: 1px 1px #EBEBEB,-1px -1px #949494;
+}
+
+section ul li p .sub,section ul li p .plus{
+	margin-right: 5px;
+	float: left;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	background: -webkit-linear-gradient(top,#ADADAD,#4F4F4F);
+	border-radius: 5px;
+}
+
+section ul li p button i{
+	font-family:"imocc-icon";
+	font-size: 14px;
+	color: #fff;
+}
+
+section ul li .car{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	background: url(../img/car.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.goShopping{
+	position: absolute;
+	top: 70%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	width: 60%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 26px;
+	background: -webkit-linear-gradient(top, #D0D77A, #B2BF3D);
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 1px #B2BF3D,0 -1px #D0D77A;
+}
+
+footer ul li a{
+	padding: relative;
+}
+
+footer ul li a b{
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -53px;
+	left: -13px;
+	background: #B2BF3D;
+	border-radius: 10px;
+	color: #fff;
+}
+
+footer ul li:nth-child(3){
+	border-top: 4px solid #B2BF3D;
+}
+
+footer ul li:nth-child(3) i{
+	color: #B2BF3D;
+}
+footer ul li:nth-child(3) a{
+	color: #B2BF3D;
+}
+
+
+
+

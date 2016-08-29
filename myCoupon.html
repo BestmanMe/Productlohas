@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>	
+		<title>我的优惠券</title>
+		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myShow.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myCoupon.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="headerBottom">
+				我的优惠券
+			</div>
+			<a class="arrow" href="myShow.html">
+			    
+			</a>
+		</header>
+		<section>
+			<div class="any">
+			    <a href="###" class="first">已使用</a>
+			    <a href="###">未使用</a>
+			    <a href="###">已过期</a>
+			    <a href="###" class="last">未激活</a>
+			</div>
+			<div class="couponInfor">
+			    <p>40元现金券（满299元可使用）</p>
+			    <p>号码：<span>DSMFKSC2WX47VL</span></p>
+			    <p>过期时间：<span>2013年05月29日</span></p>
+			    <p>状态：<span>已使用</span></p>
+			</div>
+			<div class="couponInfor hide">
+			    <p>100元现金券（满1000元可使用）</p>
+			    <p>号码：<span>DSMFKSC2WX47VL</span></p>
+			    <p>过期时间：<span>2016年03月10日</span></p>
+			    <p>状态：<span>未使用</span></p>
+			</div>
+			<div class="couponInfor hide">
+			    <p>20元现金券（满199元可使用）</p>
+			    <p>号码：<span>DSMFKSC2WX47VL</span></p>
+			    <p>过期时间：<span>2012年12月31日</span></p>
+			    <p>状态：<span>已过期</span></p>
+			</div>
+			<div class="couponInfor hide">
+			    <p>50元现金券（满288元可使用）</p>
+			    <p>号码：<span>DSMFKSC2WX47VL</span></p>
+			    <p>过期时间：<span>2016年05月29日</span></p>
+			    <p>状态：<span>未激活</span></p>
+			</div>
+		</section>
+		<footer>
+			<ul>
+			    <li>
+			    	<a href="index.html">
+			    		<i>&#xe909</i>
+			    		<span>首页</span>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="classification.html">
+			    		<i>&#xe9bb</i>
+			    		<span>分类</span>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="shoppingCar.html">
+			    		<i>&#xe93a</i>
+			    		<span>购物车</span>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="myShow.html">
+			    		<i>&#xe971</i>
+			    		<span>我的秀</span>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="more.html">
+			    		<i>...</i>
+			    		<span>更多</span>
+			    	</a>
+			    </li>
+			</ul>
+		</footer>
+	</body>
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+	    $('.any').find('a').each(function(index){
+	    	$(this).click(function(){
+	    		$('.any').find('a').removeClass('first');
+	    		$(this).addClass('first');
+	    		$('.couponInfor').addClass('hide').removeClass('show');
+	    		$('.couponInfor').eq(index).addClass('show');
+	    	})
+	    })
+	</script>
+</html>
